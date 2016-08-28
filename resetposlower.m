@@ -1,0 +1,44 @@
+clc;
+close all;
+clear all;
+
+ser = serial('COM1', 'Baudrate', 9600, 'Databits', 8);
+fopen(ser);
+pause(1);
+
+sendangle_lfot(90,ser);
+pause(2);
+sendangle_rfot(90,ser);
+pause(2);
+sendangle_lkne(90,ser);
+pause(2);
+sendangle_rkne(90,ser);
+pause(2);
+sendangle_lthg(90,ser);
+pause(2);
+sendangle_rthg(90,ser);
+pause(2);
+sendangle_lhip(90,ser);
+pause(2);
+sendangle_rhip(90,ser);
+pause(2);
+sendangle_spne(90,ser);
+pause(2);
+sendangle_larm(90,ser);
+pause(2);
+sendangle_rarm(90,ser);
+pause(2);
+sendangle_lslr(90,ser);
+pause(2);
+sendangle_rslr(90,ser);
+pause(2);
+sendangle_lelb(90,ser);
+pause(2);
+sendangle_relb(90,ser);
+pause(2);
+sendangle_lelt(90,ser);
+pause(2);
+sendangle_relt(90,ser);
+pause(2);
+fclose(ser);
+
